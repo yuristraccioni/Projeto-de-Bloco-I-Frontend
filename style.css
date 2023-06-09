@@ -135,7 +135,7 @@ h4.headers {
   font-weight: 700;
 }
 
-h3.cortes-h3 {
+h3.sub {
   font-family: "Qwitcher Grypen", cursive;
   color: #8c6e57;
   font-weight: 700;
@@ -290,18 +290,9 @@ div#parallax2 {
 }
 
 /* Contato */
-div.contato {
+div.contato-container {
   background-color: #ede9e5;
-  display: flex;
-  height: 800px;
-  margin: 60px;
-}
-
-#map {
-  border-radius: 50%;
-  border: none;
-  height: 500px;
-  width: 500px;
+  text-align: center;
 }
 
 /* Footer */

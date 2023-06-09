@@ -165,7 +165,7 @@
     </div>
     <!-- Cortes -->
     <div class="cortes-container" id="cortes">
-      <h3 class="cortes-h3">Cortes especiais</h3>
+      <h3 class="sub">Cortes especiais</h3>
       <div class="cortes-container-filho reveal active">
         <div class="cortes-box">
           <img
@@ -403,18 +403,114 @@
         />
       </div>
     </div>
-
     <!-- Parallax 2 -->
     <div id="parallax2"></div>
-    <div class="contato">
-      <div id="localizacao">
-        <iframe
-          id="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.426252014402!2d-46.668876900777136!3d-23.573740273525875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d93262baf1%3A0xc72b97bfafbf86a8!2sAv.%20Brasil%20-%20Jardim%20America%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2016604-006!5e0!3m2!1spt-BR!2sbr!4v1684255067783!5m2!1spt-BR!2sbr"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+    <!-- CONTATO -->
+    <div class="contato-container">
+      <h3 class="sub">Contato</h3>
+      <div class="formulario-container">
+        <form action="" method="post">
+          <div class="form-column">
+            <div class="form-row">
+              <div class="input-data">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Digite seu nome"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Digite seu e-mail"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <label for="telephone">Telefone</label>
+                <input
+                  type="text"
+                  name="telephone"
+                  placeholder="Digite seu número"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+            </div>
+            <!-- Radio tratar -->
+            <div>Preferência</div>
+            <div class="form-row preferences">
+              <div class="input-data">
+                <label for="radio-preferences">Ambos</label>
+                <input type="radio" name="radio-preferences" />
+              </div>
+            </div>
+            <div class="form-row preferences">
+              <div class="input-data">
+                <label for="radio-preferences">Cortes Especiais</label>
+                <input type="radio" name="radio-preferences" />
+              </div>
+            </div>
+            <div class="form-row preferences">
+              <div class="input-data">
+                <label for="radio-preferences">Cortes Premium</label>
+                <input type="radio" name="radio-preferences" />
+              </div>
+            </div>
+          </div>
+          <div class="form-column">
+            <!-- Select tratar -->
+            <div class="form-row select">
+              <div class="input-data">
+                <label for="fav">Seu corte favorito</label>
+                <select name="fav" form="carform">
+                  <option value="picanha">Picanha</option>
+                  <option value="filé-mignon">Filé-Mignon</option>
+                  <option value="ancho">Ancho</option>
+                  <option value="outras">Outras</option>
+                </select>
+              </div>
+            </div>
+            <!-- Checkbox tratar -->
+            <div>Receber notificações</div>
+            <div class="form-row">
+              <div class="input-data">
+                <label for="checkbox">Ambos</label>
+                <input type="checkbox" name="checkbox" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <label for="checkbox">E-mail</label>
+                <input type="checkbox" name="checkbox" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <label for="checkbox">SMS</label>
+                <input type="checkbox" name="checkbox" />
+              </div>
+            </div>
+            <!-- Textarea tratar -->
+            <div class="form-row textarea">
+              <div class="input-data">
+                <label>Sua Mensagem</label>
+                <textarea name="textarea" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
       </div>
     </div>
     <footer>
