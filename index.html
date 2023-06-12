@@ -416,7 +416,7 @@
                 <label for="name">Nome</label>
                 <input
                   type="text"
-                  name="name"
+                  id="name"
                   placeholder="Digite seu nome"
                   autocomplete="name"
                   required
@@ -428,7 +428,7 @@
                 <label for="email">E-mail</label>
                 <input
                   type="email"
-                  name="email"
+                  id="email"
                   placeholder="Digite seu e-mail"
                   autocomplete="email"
                   required
@@ -440,7 +440,7 @@
                 <label for="telephone">Telefone</label>
                 <input
                   type="text"
-                  name="telephone"
+                  id="telephone"
                   placeholder="Digite seu número"
                   autocomplete="tel"
                   required
@@ -473,7 +473,7 @@
             <div class="form-row select">
               <div class="input-data">
                 <label for="fav">Seu corte favorito</label>
-                <select name="fav" form="carform">
+                <select id="fav" form="carform">
                   <option value="picanha">Picanha</option>
                   <option value="filé-mignon">Filé-Mignon</option>
                   <option value="ancho">Ancho</option>
@@ -485,27 +485,27 @@
             <div>Receber notificações</div>
             <div class="form-row">
               <div class="input-data">
-                <label for="checkbox">Ambos</label>
-                <input type="checkbox" name="checkbox" />
+                <label for="checkbox1">Ambos</label>
+                <input type="checkbox" id="checkbox1" />
               </div>
             </div>
             <div class="form-row">
               <div class="input-data">
-                <label for="checkbox">E-mail</label>
-                <input type="checkbox" name="checkbox" />
+                <label for="checkbox2">E-mail</label>
+                <input type="checkbox" id="checkbox2" />
               </div>
             </div>
             <div class="form-row">
               <div class="input-data">
-                <label for="checkbox">SMS</label>
-                <input type="checkbox" name="checkbox" />
+                <label for="checkbox3">SMS</label>
+                <input type="checkbox" id="checkbox3" />
               </div>
             </div>
             <!-- Textarea tratar -->
             <div class="form-row textarea">
               <div class="input-data">
-                <label>Sua Mensagem</label>
-                <textarea name="textarea" cols="30" rows="10"></textarea>
+                <label for="textarea">Sua Mensagem</label>
+                <textarea id="textarea" cols="30" rows="10"></textarea>
               </div>
             </div>
             <button type="submit">Enviar</button>
