@@ -171,6 +171,13 @@ span.plus {
   font-size: 20px;
   font-weight: 700;
 }
+
+.bold {
+  color: #191716;
+  font-size: 17px;
+  font-weight: 500;
+}
+
 .cortes-container {
   text-align: center;
   padding: 60px 0px 60px 0px;
@@ -293,6 +300,96 @@ div#parallax2 {
 div.contato-container {
   background-color: #ede9e5;
   text-align: center;
+}
+
+.input-data {
+  line-height: 25px;
+  padding: 0 20px 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-data-r {
+  line-height: 25px;
+  padding: 0 0 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label {
+  display: inline-block;
+  padding-right: 10px;
+}
+input {
+  width: 100%;
+  padding-right: 10px;
+  font-size: 17px;
+  padding: 1px;
+  border: none;
+  border-bottom: 1px solid #191716;
+  background-color: transparent;
+}
+
+div.formulario-container {
+  display: flex;
+  padding: 60px 0px 60px 0px;
+  justify-content: center;
+}
+/* Radio/checkbox */
+
+div.radio,
+div.checkbox {
+  display: flex;
+  line-height: 25px;
+  justify-content: space-between;
+}
+
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 25px;
+  align-items: center;
+  padding: 0 0 20px 20px;
+}
+
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 25px;
+  align-items: center;
+  padding: 0 20px 20px 0;
+}
+
+.radio-btn {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #8c6e57;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0 4px;
+}
+
+.ckb {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #8c6e57;
+  border-radius: 15%;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0 4px;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.clicked {
+  background-color: #8c6e57;
+}
+
+.color-only {
+  background-color: #8c6e57;
 }
 
 /* Footer */
