@@ -123,8 +123,8 @@ options.forEach((option) => {
 
     menu.classList.remove("menu-open");
     options.forEach((option) => {
-      option.classList.remove("active");
+      option.classList.remove("drop-active");
     });
-    option.classList.add("active");
+    option.classList.add("drop-active");
   });
 });

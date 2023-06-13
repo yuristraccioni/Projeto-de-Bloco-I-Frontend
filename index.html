@@ -457,20 +457,25 @@
           </div>
         </div>
         <div class="form-column">
-          <!-- Select -->
+          <!-- Select dropdown-->
           <div class="input-data-r">
             <span class="bold">Seu corte favorito</span>
           </div>
-          <div class="form-row select">
-            <div class="select-opt">
-              <select id="fav" form="carform">
-                <option value="picanha">Picanha</option>
-                <option value="filé-mignon">Filé-Mignon</option>
-                <option value="ancho">Ancho</option>
-                <option value="outras">Outras</option>
-              </select>
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">Selecione</span>
+              <div class="caret"></div>
             </div>
+            <ul class="menu">
+              <li class="active">Picanha</li>
+              <li>Ancho</li>
+              <li>Mignon</li>
+              <li>Chorizo</li>
+              <li>Prime Rib</li>
+              <li>T-Bone</li>
+            </ul>
           </div>
+
           <!-- Radio -->
           <div class="input-data-r">
             <span class="bold">Preferência</span>
@@ -488,11 +493,17 @@
             <span class="bold">Sua Mensagem</span>
           </div>
           <div class="text-area">
-            <textarea id="textarea" cols="30" rows="10"></textarea>
+            <textarea
+              id="textarea"
+              maxlength="190"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
-
-          <button type="submit">Enviar</button>
         </div>
+      </div>
+      <div class="submit-btn">
+        <button type="submit">Enviar</button>
       </div>
     </div>
     <footer>

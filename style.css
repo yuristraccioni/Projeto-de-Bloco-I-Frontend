@@ -299,6 +299,7 @@ div#parallax2 {
 /* Contato */
 div.contato-container {
   background-color: #ede9e5;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -328,11 +329,13 @@ input {
   border: none;
   border-bottom: 1px solid #191716;
   background-color: transparent;
+  height: 40px;
+  margin-top: 5px;
 }
 
 div.formulario-container {
   display: flex;
-  padding: 60px 0px 60px 0px;
+  padding: 0 0px 40px 0px;
   justify-content: center;
 }
 /* Radio/checkbox */
@@ -390,6 +393,135 @@ div.checkbox {
 
 .color-only {
   background-color: #8c6e57;
+}
+
+/* Select Dropdown */
+
+.dropdown {
+  min-width: 15em;
+  margin: 0 0 20px 20px;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  background: transparent;
+  color: #191716;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #8c6e57;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-clicked {
+  border: 2px solid #8c6e57;
+  box-shadow: 0 0 0.8em #8c6e57;
+}
+
+.select:hover {
+  background: #fff;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #191716;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #fff;
+  border: 1px solid #ede9e5;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #191716;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 1;
+  display: none;
+}
+
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  display: flex;
+}
+
+.menu li:hover {
+  background: #ede9e5;
+}
+
+.drop-active {
+  background: #ede9e5;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+/* Textarea */
+.text-area {
+  display: flex;
+}
+
+textarea#textarea {
+  width: 100%;
+  height: 90px;
+  margin: 0 0 0 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/* submit Button  */
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px 0;
+}
+
+.submit-btn button {
+  background-color: #8c6e57;
+  color: #fff;
+  text-transform: uppercase;
+  width: 160px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+}
+
+.submit-btn button:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #191716;
 }
 
 /* Footer */
