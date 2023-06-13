@@ -50,11 +50,19 @@ for (let i = 0; i < checkBox.length; i++) {
     } else if (i === 1) {
       checkBox[1].classList.toggle("clicked");
       if (
+        checkBox[0].classList.contains("clicked") &&
+        checkBox[0].classList.contains("color-only") &&
+        checkBox[0].innerHTML === "-"
+      ) {
+        checkBox[0].classList.remove("clicked");
+        checkBox[0].classList.remove("color-only");
+        checkBox[0].innerHTML = "";
+      } else if (
         checkBox[1].classList.contains("clicked") &&
         checkBox[2].classList.contains("clicked")
       ) {
         checkBox[0].classList.toggle("clicked");
-        checkBox[0].classList.remove("color-only");
+        checkBox[0].classList.toggle("color-only");
         checkBox[0].innerHTML = "&#x2713;";
       } else if (
         checkBox[1].classList.contains("clicked") ||
@@ -66,11 +74,19 @@ for (let i = 0; i < checkBox.length; i++) {
     } else {
       checkBox[2].classList.toggle("clicked");
       if (
+        checkBox[0].classList.contains("clicked") &&
+        checkBox[0].classList.contains("color-only") &&
+        checkBox[0].innerHTML === "-"
+      ) {
+        checkBox[0].classList.remove("clicked");
+        checkBox[0].classList.remove("color-only");
+        checkBox[0].innerHTML = "";
+      } else if (
         checkBox[1].classList.contains("clicked") &&
         checkBox[2].classList.contains("clicked")
       ) {
         checkBox[0].classList.toggle("clicked");
-        checkBox[0].classList.remove("color-only");
+        checkBox[0].classList.toggle("color-only");
         checkBox[0].innerHTML = "&#x2713;";
       } else if (
         checkBox[1].classList.contains("clicked") ||
