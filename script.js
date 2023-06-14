@@ -128,3 +128,85 @@ options.forEach((option) => {
     option.classList.add("drop-active");
   });
 });
+
+// Validações JS
+
+function validar() {
+  // Nome completo
+  const nameInput = document.querySelector("#name").value;
+  const fullName = nameInput.trim().split(" ");
+  console.log(`Name: ${fullName}`);
+
+  // E-mail
+  const emailInput = document.querySelector("#email").value;
+  const atSign = emailInput.indexOf("@");
+  const dotSign = emailInput.indexOf(".");
+  const emailValidate = emailInput.slice(atSign + 1, dotSign);
+  console.log(emailValidate);
+  console.log(`E-mail: ${emailInput}`);
+
+  // Telefone
+  const telephoneInput = document.querySelector("#telephone").value;
+  const telNumber = telephoneInput
+    .replaceAll(",", "")
+    .replaceAll("-", "")
+    .trim()
+    .split(" ")
+    .join("");
+  console.log(`Telephone: ${telNumber}`);
+
+  // Checkbox
+  let arrCheckbox = [];
+  for (let i = 1; i < checkBox.length; i++) {
+    if (checkBox[i].classList.contains("clicked")) {
+      const checkBoxValue = checkBox[i].nextElementSibling.innerText;
+      arrCheckbox.push(checkBoxValue);
+    }
+  }
+  console.log(`Checkbox: ${arrCheckbox}`);
+
+  // Select
+  console.log(`Selected: ${selected.innerText}`);
+
+  // Radio
+  let arrRadio = [];
+  for (let i = 0; i < radioBtn.length; i++) {
+    if (radioBtn[i].classList.contains("clicked")) {
+      const radioBtnValue = radioBtn[i].nextElementSibling.innerText;
+      arrRadio.push(radioBtnValue);
+    }
+  }
+  console.log(`Radio button: ${arrRadio}`);
+
+  // Textarea
+  const textAreaInput = document.querySelector("#textarea").value;
+  console.log(`Message: ${textAreaInput}`);
+
+  if (fullName.length < 2) {
+    alert("Digite o nome completo");
+  } else if (
+    emailValidate.length === 0 ||
+    !emailInput.includes("@") ||
+    !emailInput.includes(".")
+  ) {
+    alert("Digite um endereço de e-mail válido");
+  } else if (telNumber.length !== 11) {
+    alert("Digite um número válido (11 Caracteres)");
+  } else if (arrCheckbox.length === 0) {
+    alert("Selecione pelo menos uma opção de notificação");
+  } else if (selected.innerText === "Selecione") {
+    alert("Selecione um corte favorito");
+  } else if (arrRadio.length === 0) {
+    alert("Selecione pelo menos uma opção de preferência");
+  } else if (textAreaInput.length < 5) {
+    alert("Insira pelo menos uma mensagem com 5 caracteres");
+  } else if (selected.innerText === "Selecione") {
+    alert("Selecione um corte favorito");
+  } else {
+    window.location.reload();
+    alert("Formulário enviado com sucesso");
+  }
+}
+
+const btnSubmit = document.querySelector("#click-submit");
+btnSubmit.addEventListener("click", validar);
